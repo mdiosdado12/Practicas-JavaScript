@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container-sm mt-5" style="min-width: 50%; max-width: 60%; margin: 0 auto; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h1>Clasificador de Viajes</h1>
+    <form id="formulario" method="post">
+        <input type="hidden" class="form-control" id="txAccion" name="txAccion" aria-describedby="nombreCrear"
+               value="crearNuevo">
+
+        <div class="mb-3">
+            <label for="txCodigoViaje" class="form-label is-required">Codigo de Viaje : </label>
+            <input type="text" class="form-control" id="txCodigoViaje" name="txCodigoViaje" aria-describedby="codigoViajeAyuda"
+                   placeholder="Ingresa el codigo del viaje">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="txMatricula" class="form-label is-required">Matrícula : </label>
+            <input type="text" class="form-control" id="txMatricula" name="txMatricula" aria-describedby="matriculaAyuda"
+                   placeholder="Ingresa la matrícula del vehículo">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="txCiudadOrigen" class="form-label is-required">Ciudad de Origen : </label>
+            <input type="text" class="form-control" id="txCiudadOrigen" name="txCiudadOrigen" aria-describedby="ciudadOrigenAyuda"
+                   placeholder="Ingresa la ciudad de origen">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="txCiudadDestino" class="form-label is-required">Ciudad de Destino : </label>
+            <input type="text" class="form-control" id="txCiudadDestino" name="txCiudadDestino" aria-describedby="ciudadDestinoAyuda"
+                   placeholder="Ingresa la ciudad de destino">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="txEstadoViaje" class="form-label is-required">Estado del Viaje : </label>
+            <select class="form-control" id="txEstadoViaje" name="txEstadoViaje" aria-describedby="estadoViajeAyuda">
+                <option value="">Selecciona el estado del viaje</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="asignado">Asignado</option>
+                <option value="en_ruta">En ruta</option>
+                <option value="entregado">Entregado</option>
+                <option value="incidencia">Incidencia</option>
+            </select>
+        </div>
+        <br><br>
+
+        <button id="validar-enviar" type="submit" class="btn btn-warning mb-2">Enviar</button>
+        <a href="clasificador-viajes.html">
+            <button type="button" class="btn btn-danger mb-2">Cancelar</button>
+        </a>
+
+        <p id="resultado"></p>
+    </form>
+</div>
+
+<script src="./Js/app.js"></script>
+
+</body>
+</html>

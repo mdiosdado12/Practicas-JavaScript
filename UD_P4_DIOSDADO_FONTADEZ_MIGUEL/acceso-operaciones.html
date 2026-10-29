@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container-sm mt-5" style="min-width: 50%; max-width: 60%; margin: 0 auto; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h1>Clasificador de Viajes</h1>
+    <form id="formulario" method="post">
+        <input type="hidden" class="form-control" id="txAccion" name="txAccion" aria-describedby="nombreCrear"
+               value="crearNuevo">
+
+        <div class="mb-3">
+            <label for="txCodigoViaje" class="form-label is-required">Codigo de Empleado : </label>
+            <input type="password" class="form-control" id="txcodigoEmpleado" name="txcodigoEmpleado" aria-describedby="codigoEmpleadoAyuda"
+                   placeholder="Ingresa el codigo del empleado">
+
+        </div>
+        <br><br>
+
+        <button id="validar-enviar" type="submit" class="btn btn-warning mb-2">Enviar</button>
+        <a href="clasificador-viajes.html">
+            <button type="button" class="btn btn-danger mb-2">Cancelar</button>
+        </a>
+
+        <p id="resultado"></p>
+    </form>
+</div>
+
+<script src="./js/acceso.js"></script>
+
+</body>
+</html>
